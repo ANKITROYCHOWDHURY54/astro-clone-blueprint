@@ -115,8 +115,8 @@ const CoursesSection = () => {
                   </span>
                 </div>
                 
-                <Button variant="cta" size="lg" className="w-full group-hover:shadow-glow transition-all">
-                  Enroll Now
+                <Button variant="cta" size="lg" className="w-full group-hover:shadow-glow transition-all" asChild>
+                  <a href="#contact">Enroll Now</a>
                 </Button>
               </CardContent>
             </Card>

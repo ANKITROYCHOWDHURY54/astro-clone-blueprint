@@ -72,9 +72,11 @@ const PodcastSection = () => {
               </div>
             </div>
 
-            <Button variant="hero" size="lg" className="text-lg px-8 py-6">
-              <Play className="h-5 w-5 mr-2" />
-              Listen to Latest Episode
+            <Button variant="hero" size="lg" className="text-lg px-8 py-6" asChild>
+              <a href="#videos">
+                <Play className="h-5 w-5 mr-2" />
+                Listen to Latest Episode
+              </a>
             </Button>
           </div>
         </div>
@@ -118,8 +120,8 @@ const PodcastSection = () => {
                       <span>{podcast.duration}</span>
                     </div>
 
-                    <Button variant="ghost" size="sm" className="text-accent hover:text-accent/80 hover:bg-accent/10 p-0">
-                      Listen Now →
+                    <Button variant="ghost" size="sm" className="text-accent hover:text-accent/80 hover:bg-accent/10 p-0" asChild>
+                      <a href="#videos">Listen Now →</a>
                     </Button>
                   </div>
                 </div>
@@ -129,8 +131,8 @@ const PodcastSection = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Button variant="cta" size="lg">
-            View All Episodes
+          <Button variant="cta" size="lg" asChild>
+            <a href="https://www.youtube.com/@AstroArunPandit/videos" target="_blank" rel="noreferrer">View All Episodes</a>
           </Button>
         </div>
       </div>

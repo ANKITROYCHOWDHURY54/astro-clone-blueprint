@@ -121,8 +121,8 @@ const ServicesSection = () => {
                     {service.description}
                   </p>
                   
-                  <Button variant="outline" size="sm" className="w-full group-hover:bg-secondary group-hover:text-secondary-foreground group-hover:border-secondary">
-                    {service.cta}
+                  <Button variant="outline" size="sm" className="w-full group-hover:bg-secondary group-hover:text-secondary-foreground group-hover:border-secondary" asChild>
+                    <a href="#contact">{service.cta}</a>
                   </Button>
                 </CardContent>
               </Card>

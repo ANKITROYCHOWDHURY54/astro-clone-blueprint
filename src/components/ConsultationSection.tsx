@@ -67,11 +67,11 @@ const ConsultationSection = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button variant="hero" size="lg" className="text-lg px-8 py-6">
-                Book Your Call Consultation Now
+              <Button variant="hero" size="lg" className="text-lg px-8 py-6" asChild>
+                <a href="#contact">Book Your Call Consultation Now</a>
               </Button>
-              <Button variant="ghost" size="lg" className="text-primary-foreground border-primary-foreground/30 hover:bg-primary-foreground/10">
-                View Consultation Packages
+              <Button variant="ghost" size="lg" className="text-primary-foreground border-primary-foreground/30 hover:bg-primary-foreground/10" asChild>
+                <a href="#services">View Consultation Packages</a>
               </Button>
             </div>
 

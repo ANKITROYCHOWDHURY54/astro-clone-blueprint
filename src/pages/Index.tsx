@@ -7,6 +7,9 @@ import StatsSection from "@/components/StatsSection";
 import CalculatorsSection from "@/components/CalculatorsSection";
 import CoursesSection from "@/components/CoursesSection";
 import PodcastSection from "@/components/PodcastSection";
+import VideoSection from "@/components/VideoSection";
+import AboutSection from "@/components/AboutSection";
+import ContactSection from "@/components/ContactSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import ZodiacSection from "@/components/ZodiacSection";
 import BlogSection from "@/components/BlogSection";
@@ -20,40 +23,77 @@ const Index = () => {
       <Header />
 
       {/* 2. Hero Section */}
-      <HeroSection />
+      <div id="home">
+        <HeroSection />
+      </div>
 
       {/* 3. Our Services Section */}
-      <ServicesSection />
+      <div id="services">
+        <ServicesSection />
+      </div>
 
       {/* 4. In The Media Section */}
-      <MediaSection />
+      <div id="media">
+        <MediaSection />
+      </div>
+
+      {/* About Section */}
+      <div id="about">
+        <AboutSection />
+      </div>
 
       {/* 5. Consultation Call Section */}
-      <ConsultationSection />
+      <div id="consultation">
+        <ConsultationSection />
+      </div>
 
       {/* 6. Stats / Counters Section */}
       <StatsSection />
 
       {/* 7. Free Calculators Section */}
-      <CalculatorsSection />
+      <div id="calculators">
+        <CalculatorsSection />
+      </div>
 
       {/* 8. Courses Section */}
-      <CoursesSection />
+      <div id="courses">
+        <CoursesSection />
+      </div>
 
       {/* 9. Podcast Section */}
-      <PodcastSection />
+      <div id="podcast">
+        <PodcastSection />
+      </div>
+
+      {/* 10. Video Section */}
+      <div id="videos">
+        <VideoSection />
+      </div>
 
       {/* 10. Client Testimonials Section */}
-      <TestimonialsSection />
+      <div id="testimonials">
+        <TestimonialsSection />
+      </div>
 
       {/* 11. Zodiac Signs Section */}
-      <ZodiacSection />
+      <div id="zodiac">
+        <ZodiacSection />
+      </div>
 
       {/* 12. Blog/Articles Preview */}
-      <BlogSection />
+      <div id="blog">
+        <BlogSection />
+      </div>
 
       {/* 13. FAQ Section */}
-      <FAQSection />
+      <div id="faqs">
+        <FAQSection />
+      </div>
+
+      {/* Contact Section */}
+      <div id="contact">
+        <ContactSection />
+      </div>
 
       {/* 14. Footer */}
       <Footer />

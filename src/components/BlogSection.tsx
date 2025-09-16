@@ -110,8 +110,8 @@ const BlogSection = () => {
                   <div className="text-xs text-muted-foreground">
                     By {article.author}
                   </div>
-                  <Button variant="ghost" size="sm" className="text-secondary hover:text-secondary/80 p-0">
-                    Read More <ArrowRight className="h-3 w-3 ml-1" />
+                  <Button variant="ghost" size="sm" className="text-secondary hover:text-secondary/80 p-0" asChild>
+                    <a href="#blog">Read More <ArrowRight className="h-3 w-3 ml-1" /></a>
                   </Button>
                 </div>
               </CardContent>
@@ -120,8 +120,8 @@ const BlogSection = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Button variant="cta" size="lg">
-            View All Articles
+          <Button variant="cta" size="lg" asChild>
+            <a href="#blog">View All Articles</a>
           </Button>
           
           <div className="flex flex-wrap justify-center gap-4 mt-8">

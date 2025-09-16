@@ -39,9 +39,11 @@ const MediaSection = () => {
                   </div>
                 </div>
                 
-                <Button variant="outline" size="sm" className="w-full group">
-                  <ExternalLink className="h-4 w-4 mr-2" />
-                  Read Article
+                <Button variant="outline" size="sm" className="w-full group" asChild>
+                  <a href="#media" aria-label={`Read article about ${media.name}`}>
+                    <ExternalLink className="h-4 w-4 mr-2" />
+                    Read Article
+                  </a>
                 </Button>
               </CardContent>
             </Card>

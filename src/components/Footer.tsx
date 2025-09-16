@@ -4,7 +4,14 @@ import { Star, Phone, Mail, MapPin, Facebook, Twitter, Instagram, Youtube } from
 
 const Footer = () => {
   const quickLinks = [
-    "About Us", "Services", "Courses", "Blog", "Contact", "Privacy Policy", "Terms of Service", "Sitemap"
+    { label: "About Us", href: "#about" },
+    { label: "Services", href: "#services" },
+    { label: "Courses", href: "#courses" },
+    { label: "Blog", href: "#blog" },
+    { label: "Contact", href: "#contact" },
+    { label: "Privacy Policy", href: "#privacy" },
+    { label: "Terms of Service", href: "#terms" },
+    { label: "Sitemap", href: "#sitemap" }
   ];
 
   const services = [
@@ -52,10 +59,10 @@ const Footer = () => {
               {quickLinks.map((link, index) => (
                 <li key={index}>
                   <a 
-                    href={`#${link.toLowerCase().replace(/\s+/g, '-')}`}
+                    href={link.href}
                     className="text-maroon-foreground/80 hover:text-accent transition-colors text-sm"
                   >
-                    {link}
+                    {link.label}
                   </a>
                 </li>
               ))}
@@ -92,8 +99,8 @@ const Footer = () => {
                 placeholder="Enter your email"
                 className="bg-maroon-foreground/10 border-maroon-foreground/20 text-maroon-foreground placeholder:text-maroon-foreground/50"
               />
-              <Button variant="cta" className="w-full">
-                Subscribe Now
+              <Button variant="cta" className="w-full" asChild>
+                <a href="#contact">Subscribe Now</a>
               </Button>
             </div>
 

@@ -128,4 +128,12 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Smooth scrolling and anchor offset for sticky header */
+  html {
+    scroll-behavior: smooth;
+  }
+  [id] {
+    scroll-margin-top: 5rem; /* header height offset */
+  }
 }

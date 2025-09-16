@@ -95,8 +95,9 @@ const CalculatorsSection = () => {
                     variant="cta" 
                     size="lg" 
                     className="w-full group-hover:shadow-glow transition-all"
+                    asChild
                   >
-                    {calc.cta}
+                    <a href="#contact">{calc.cta}</a>
                   </Button>
                 </CardContent>
               </Card>
